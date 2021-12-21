@@ -1,0 +1,8 @@
+ENUM VALUES,,,,,,,,,,,,,,,,,,,
+Gender,,,,,,,,,,,,,,,,,,,
+F,F,,,,,,,,,,,,,,,,,,
+M,M,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+TABLE DATA,,,,,,,,,,,,,,,,,,,
+TIN,Employee's Name,Date Of Birth,Gender,1. Designation,2. Basic Salary and Wages,3. Housing Allowance,4. Overtime,5. Commission,6. Pension,7. Any Other Allowances,8. Leave Passage,9. Gratuity,10. Bonus,11. Leave Grant/Leave Commutation,12. Severance Pay on Redundancy,13. Other Severance Pay,14. Notice Pay,15. Stipend,16. Any Other Income
+P0092808,Maxipain Payne,31/07/1996,M,Software Engineer,200000,0,0,0,0,0,0,0,0,0,0,0,0,0,0
