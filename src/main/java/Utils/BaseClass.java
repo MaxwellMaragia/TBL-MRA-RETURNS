@@ -12,7 +12,9 @@ import java.util.Properties;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -35,6 +37,11 @@ public class BaseClass {
 //        return driver;
 //
 //	}
+public static void scrollIntoView(WebElement element) {
+	JavascriptExecutor jse = (JavascriptExecutor) driver;
+	jse.executeScript("arguments[0].scrollIntoView()", element);
+
+}
 
 	public static WebDriver getDriver() throws IOException
 	{

@@ -354,7 +354,7 @@ public class stepDefinitions extends BaseClass {
     }
 
     @Then("Search for taxtype {string} for period year {string} and number {string} and tin {string}")
-    public void searchForTaxtypeWithCategoryAndTaxtype(String category, String taxtype, String year, String number, String tin) throws InterruptedException {
+    public void searchForTaxtypeWithCategoryAndTaxtype(String taxtype, String year, String number, String tin) throws InterruptedException {
         switchToFrameBackoffice();
 
         Thread.sleep(3000);
@@ -374,14 +374,21 @@ public class stepDefinitions extends BaseClass {
 
     @Then("Enter liability")
     public void enterLiability() throws InterruptedException {
+
+        WebElement field = thirty.until(ExpectedConditions.visibilityOfElementLocated(By.id("ReturnsLodgement:id_Liability_input")));
+        Thread.sleep(2000);
+//        scrollIntoView(field);
+        WebElement field2 = thirty.until(ExpectedConditions.visibilityOfElementLocated(By.id("ReturnsLodgement:id_Liability_input")));
         Thread.sleep(5000);
-        twenty.until(ExpectedConditions.visibilityOfElementLocated(By.id("ReturnsLodgement:id_Liability_input"))).sendKeys("9000");
+        field2.sendKeys("9000");
     }
 
     @Then("Submit lodge return application")
     public void submitLodgeReturnApplication() throws InterruptedException {
+
+        WebElement field = twenty.until(ExpectedConditions.visibilityOfElementLocated(By.id("ReturnsLodgement:SaveLodgement")));
         Thread.sleep(4000);
-        twenty.until(ExpectedConditions.visibilityOfElementLocated(By.id("ReturnsLodgement:SaveLodgement"))).click();
+        field.click();
     }
 
     @And("Click on return filing and processing > File return")

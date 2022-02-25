@@ -25,16 +25,16 @@ Feature: [SUC:09-11] Cancel Tax Return
     And Verify approval "Approved"
     Examples:
       | Return                          | Tin      | Number | Year | Arn  | Taxtype               |
-      | Capital Gain Tax(CGT) Return    | C0104499 |        |      | CGTR | Capital Gain Tax(CGT) |
-      | Company Income Tax(CIT) Return  | V0104530 | 1      | 2021 | CIRT | Company Income Tax    |
-      | Dividend Tax Return             | V0104503 |        |      | DIVR | Dividend Tax          |
-      | Domestic Excise Return          | C0104499 | 1      | 2022 | DEXR | Domestic Excise       |
-      | Domestic VAT Return             | C0104499 | 1      | 2022 | VATR | Domestic VAT          |
-      | Fringe Benefit Tax Return       | C0104499 | 1      | 2022 | FBTR | Fringe Benefit Tax    |
-      | Non Resident Tax(NRT) Return    | C0104499 |        |      | NRTR | Non Resident Tax(NRT) |
-      | PAYE Tax Return                 | C0104515 | 1      | 2022 | EPMR | PAYE                  |
-      | Personal Income Tax(PIT) Return | C0104515 | 1      | 2021 | PIRF | Personal Income Tax   |
-      | Provisional Tax(CIT) Return     | V0104503 | 1      | 2022 | CIRP | Company Income Tax    |
-      | Provisional Tax(PIT) Return     | C0104515 | 1      | 2022 | PIRP | Personal Income Tax   |
-      | Turnover Tax(TOT) Return        | C0104524 | 1      | 2022 | TOTR | Turnover Tax(TOT)     |
-      | Withholding Tax(WHT) Return     | C0104499 | 1      | 2022 | WITR | Withholding Tax(WHT)  |
+      | Capital Gain Tax(CGT) Return    | C0105274 |        |      | CGTR | Capital Gain Tax(CGT) |
+      | Company Income Tax(CIT) Return  | V0105280 | 1      | 2020 | CIRT | Company Income Tax    |
+      | Dividend Tax Return             | V0105280 |        |      | DIVR | Dividend Tax          |
+      | Domestic Excise Return          | V0105280 | 1      | 2022 | DEXR | Domestic Excise       |
+      | Domestic VAT Return             | C0105274 | 1      | 2022 | VATR | Domestic VAT          |
+      | Fringe Benefit Tax Return       | C0105274 | 1      | 2022 | FBTR | Fringe Benefit Tax    |
+      | Non Resident Tax(NRT) Return    | C0105274 |        |      | NRTR | Non Resident Tax(NRT) |
+      | PAYE Tax Return                 | C0105274 | 1      | 2022 | EPMR | PAYE                  |
+      | Personal Income Tax(PIT) Return | C0105274 | 1      | 2020 | PIRF | Personal Income Tax   |
+#      | Provisional Tax(CIT) Return     | V0105306 | 1      | 2020 | CIRP | Company Income Tax    |
+#      | Provisional Tax(PIT) Return     | C0105292 | 1      | 2020 | PIRP | Personal Income Tax   |
+      | Turnover Tax(TOT) Return        | C0104524 | 3      | 2022 | TOTR | Turnover Tax(TOT)     |
+      | Withholding Tax(WHT) Return     | C0105274 | 1      | 2022 | WITR | Withholding Tax(WHT)  |
